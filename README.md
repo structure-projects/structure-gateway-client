@@ -1,4 +1,4 @@
-# @structure/gateway-client
+# @structure-projects/gateway-client
 
 一个灵活的 HTTP 客户端库，专门用于与 Structure API 网关通信。包含完整的网关认证和签名机制。
 
@@ -14,11 +14,11 @@
 ## 安装
 
 ```bash
-npm install @structure/gateway-client
+npm install @structure-projects/gateway-client
 # 或
-yarn add @structure/gateway-client
+yarn add @structure-projects/gateway-client
 # 或
-pnpm add @structure/gateway-client
+pnpm add @structure-projects/gateway-client
 ```
 
 ### 可选依赖
@@ -34,7 +34,7 @@ npm install @fingerprintjs/fingerprintjs
 ### 基础用法
 
 ```typescript
-import client from '@structure/gateway-client';
+import client from '@structure-projects/gateway-client';
 
 // 发送 GET 请求
 const response = await client.get('/api/users');
@@ -46,7 +46,7 @@ const response = await client.post('/api/users', { name: 'John' });
 ### 全局配置
 
 ```typescript
-import { configureGatewayClient } from '@structure/gateway-client';
+import { configureGatewayClient } from '@structure-projects/gateway-client';
 
 configureGatewayClient({
   baseURL: 'https://api.example.com',
@@ -59,7 +59,7 @@ configureGatewayClient({
 ### 创建自定义客户端实例
 
 ```typescript
-import { createGatewayClient } from '@structure/gateway-client';
+import { createGatewayClient } from '@structure-projects/gateway-client';
 
 const customClient = createGatewayClient({
   baseURL: 'https://custom-api.example.com',
@@ -164,7 +164,7 @@ interface GatewayClientConfig {
 ## 与 Element Plus 集成示例
 
 ```typescript
-import { createGatewayClient } from '@structure/gateway-client';
+import { createGatewayClient } from '@structure-projects/gateway-client';
 import { ElMessage, ElMessageBox } from 'element-plus';
 import router from 'vue-router';
 
