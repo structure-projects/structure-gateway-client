@@ -1,5 +1,5 @@
 {
-  "name": "@structure/gateway-client",
+  "name": "@structure-projects/gateway-client",
   "version": "1.0.0",
   "description": "Structure Gateway HTTP Client - A flexible HTTP client for communicating with Structure API Gateway",
   "main": "dist/index.js",
@@ -41,6 +41,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/structure-projects/structure-portal.git"
+    "url": "https://github.com/structure-projects/structure-gateway-client.git"
   }
 }
