@@ -1,0 +1,46 @@
+{
+  "name": "@structure/gateway-client",
+  "version": "1.0.0",
+  "description": "Structure Gateway HTTP Client - A flexible HTTP client for communicating with Structure API Gateway",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "http",
+    "client",
+    "axios",
+    "gateway",
+    "api",
+    "structure"
+  ],
+  "author": "Structure Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^1.6.8"
+  },
+  "optionalDependencies": {
+    "@fingerprintjs/fingerprintjs": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.8",
+    "vite-plugin-dts": "^3.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/structure-projects/structure-portal.git"
+  }
+}
